@@ -10,7 +10,11 @@ class NewsStoryMedium extends Component {
   <div className="logo-container" >
     {this.props.source}
 </div>
-     <img src={this.props.image} className="main" />
+<img src={
+       (this.props.image) ? 
+       this.props.image : 
+       'https://uploads.guim.co.uk/2020/02/27/harley-davidson-02tt7EvQKhw-unsplash.jpg'} 
+       className="main" />
 
      
 
@@ -23,7 +27,8 @@ class NewsStoryMedium extends Component {
   
 </div>
 
-    <p className="standfirst">{this.props.standfirst} </p> 
+<p className="standfirst">
+     {(this.props.standfirst) && this.props.standfirst.split('.')[0] } </p> 
 
 
 <span className="full">FULL STORY </span> 

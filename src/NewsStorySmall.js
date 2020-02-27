@@ -17,7 +17,10 @@ class NewsStorySmall extends Component {
 
 
 
-   <p className="long-card-text">{this.props.standfirst} </p> 
+   <p className="long-card-text">
+     {(this.props.standfirst.split('.')[0].length > 10) ? 
+     this.props.standfirst.split('.')[0] 
+     : this.props.standfirst.split('.')[1] } </p> 
 
 
 <span className="full">FULL STORY </span> 

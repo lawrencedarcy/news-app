@@ -45,8 +45,10 @@ class NewsContainer extends Component {
         <h1 className="masthead">NewsCycle</h1>
 
         <div className="stories">
+          
           {this.state.topStories.slice(0, 2).map(story => (
 
+           
       
             <NewsStory
             
@@ -57,10 +59,15 @@ class NewsContainer extends Component {
               author={story.author}
               source={story.source.name}
               image={story.urlToImage}
+              content={story.content}
             />
           ))}
 
+        
+
           {this.state.topStories.slice(3, 6).map(story => (
+
+            
             <NewsStoryMedium
               className="stories"
               headline={story.title.split('-')[0] }
@@ -69,6 +76,7 @@ class NewsContainer extends Component {
               author={story.author}
               source={story.source.name}
               image={story.urlToImage}
+              content={story.content}
             />
           ))}
 
@@ -81,9 +89,11 @@ class NewsContainer extends Component {
               author={story.author}
               source={story.source.name}
               image={story.urlToImage}
+              content={story.content}
             />
           ))}
         </div>
+        
       </div>
     );
   }
