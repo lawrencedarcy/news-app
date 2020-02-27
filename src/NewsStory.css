@@ -1,0 +1,101 @@
+* {
+  font-size: 63.5%;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+
+.headline-double {
+  
+  margin-left: 2rem;
+  font-size: 2rem;
+    float: left;
+}
+
+.container {
+  
+  width: 60%;
+  margin: auto;
+  text-align: center;
+  
+}
+
+.header {
+  font-family: helvetica neue;
+  font-size: 3.3rem;
+  padding: 15px 5px 0px 5px;
+  margin: 7px 15px;
+  text-align: left;
+}
+
+.logo-container {
+  text-align: right;
+  font-size: 1rem;
+  padding: 0px 0px 0.6rem 0px;
+  
+}
+
+
+.top-stories {
+  display: flex;  
+}
+
+.stories {
+  display: flex; 
+  margin: 0rem 0rem 3rem 0rem;
+}
+
+
+
+.double-card {
+  font-family: helvetica neue;
+  
+ flex-grow: 1;
+  border: 0px solid black;
+  width: 50%;
+  text-align: left;
+  padding: 1.4rem 1.4rem;
+  box-shadow: 0px 0px 0px 1px #888888;
+  border-radius: .3rem;
+  display: inline-block;
+  margin: 15px 0.5rem;
+  position: relative;
+  
+  
+}
+
+.double-card:hover {
+  background-color: #ebf0f7;
+  cursor:pointer;
+  
+}
+
+.double-main {
+  width: 100%;
+  border-radius: 0.3rem;
+}
+
+
+
+.full {
+  background-color: #69d45b; 
+  border: none;
+  color: white;
+  padding: 0.4rem 0.4rem;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1.1rem;
+  border-radius: 0.3rem; 
+  
+  position: absolute;
+  right: 0;
+  bottom: 0; 
+  margin: 1.2rem 1.2rem;
+}
+
+.full:hover {
+
+  background-color: lightgreen;
+  cursor:pointer;
+}
