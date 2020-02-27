@@ -47,7 +47,7 @@ class NewsContainer extends Component {
         <div className="stories">
           {this.state.topStories.slice(0, 2).map(story => (
 
-            
+      
             <NewsStory
             
               className="card"
