@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css?family=Abril+Fatface&display=swap');
 
 .container {
   
@@ -8,9 +9,9 @@
 }
 
 .masthead {
-  font-family: helvetica neue;
-  font-size: 3.6rem;
-  padding: 15px 5px 0px 5px;
+  font-family: 'Abril Fatface';
+  font-size: 3.8rem;
+  padding: 1.3rem .5rem 2rem .5rem;
   margin: 7px 15px;
   text-align: left;
 }

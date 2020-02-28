@@ -5,6 +5,7 @@ import "./NewsContainer.css";
 import NewsStorySmall from "./NewsStorySmall";
 import NewsStoryMedium from "./NewsStoryMedium";
 
+
 const TOP_NEWS_URL =
   "http://newsapi.org/v2/top-headlines?" +
   "country=gb&" +
@@ -42,16 +43,17 @@ class NewsContainer extends Component {
     
     return (
       <div className="container">
-        <h1 className="masthead">NewsCycle</h1>
+       
 
         <div className="stories">
           
           {this.state.topStories.slice(0, 2).map(story => (
 
            
-      
+              
             <NewsStory
             
+
               className="card"
               headline={story.title.split('-')[0] }
               standfirst={story.description}
