@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import './NewsContainer.css';
+import './Masthead.css';
 
 class Masthead extends Component {
   render() {

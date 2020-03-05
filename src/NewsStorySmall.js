@@ -6,13 +6,19 @@ class NewsStorySmall extends Component {
     return (
       
       <div className="long-card">
+        <a 
+        href={this.props.url}
+        className="external-link"
+        target="_blank">
+          
          <div className="main-long-body"> 
  
 
-    <img src={this.props.image} className="long-card-img" />
+   
 
     
-
+    <div className='logo-container'>{this.props.source}</div>
+    <img src={this.props.image} className="long-card-img" alt="illustrating"/>
    <h1 className="long-card-headline">{this.props.headline}</h1>
 
 
@@ -25,6 +31,7 @@ class NewsStorySmall extends Component {
 
 <span className="full">FULL STORY </span> 
      </div>
+     </a>
      </div>
     
    );

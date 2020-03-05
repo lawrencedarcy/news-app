@@ -4,7 +4,6 @@ import NewsStory from "./NewsStory";
 import "./NewsContainer.css";
 import NewsStorySmall from "./NewsStorySmall";
 import NewsStoryMedium from "./NewsStoryMedium";
-import NewsStoryTiny from './NewsStoryTiny';
 
 
 const TOP_NEWS_URL =
@@ -14,11 +13,11 @@ const TOP_NEWS_URL =
 
 const ALL_STORIES =
 `http://newsapi.org/v2/everything?` +
-"sources=axios,mtv-news-uk,national-geographic,new-scientist,independent,mashable, associated-press, business-insider, politico&" +
+"sources=axios,mtv-news-uk,national-geographic,new-scientist,independent,mashable&" +
 "apiKey=0dc27b8b03d146529a79da477d2aaa48";
 
 
-class NewsContainer extends Component {
+class SportsContainer extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -98,18 +97,6 @@ class NewsContainer extends Component {
               content={story.content}
             />
           ))}
-          {this.state.allStories.slice(9, 19).map(story => (
-            <NewsStoryTiny
-              className="long-card"
-              headline={story.title}
-              
-              url={story.url}
-              author={story.author}
-              source={story.source.name}
-              
-              content={story.content}
-            />
-          ))}
         </div>
         
       </div>
@@ -117,4 +104,4 @@ class NewsContainer extends Component {
   }
 }
 
-export default NewsContainer;
+export default SportsContainer;
