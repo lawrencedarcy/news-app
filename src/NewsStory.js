@@ -40,17 +40,17 @@ class NewsStory extends Component {
 
         <h1 id='headline-double'>{this.props.headline}</h1>
 
-        <div class="more-coverage">
+     {/*    <div class="more-coverage">
           <button className='category'> Politics</button>
           <button className='category'> US News</button>
           <button className='more'> More coverage</button>
-        </div>
+        </div> */}
 
         <p className='standfirst'>
           {this.props.standfirst && this.props.standfirst.split('.')[0]}{' '}
         </p>
         
-        <span className='full'>FULL STORY </span></a>
+     {/*    <span className='full'>FULL STORY </span> */}</a>
       </div>
       
     );

@@ -16,15 +16,15 @@ class NewsStoryMedium extends Component {
             className='main'
           />
           <h1>{this.props.headline}</h1>
-          <div>
+          {/* <div>
             <button className='category'> Politics</button>
             <button className='category'> US News</button>
             <button className='more'> More coverage</button>
-          </div>
+          </div> */}
           <p className='standfirst'>
             {this.props.standfirst && this.props.standfirst.split('.')[0]}{' '}
           </p>
-          <span className='full'>FULL STORY </span>{' '}
+          {/* <span className='full'>FULL STORY </span> */}{' '}
         </a>
       </div>
     );
