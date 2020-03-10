@@ -98,7 +98,7 @@ class NewsContainer extends Component {
               content={story.content}
             />
           ))}
-          {this.state.allStories.slice(9, 19).map(story => (
+          {this.state.topStories.slice(7, 17).map(story => (
             <NewsStoryTiny
               className="long-card"
               headline={story.title}
