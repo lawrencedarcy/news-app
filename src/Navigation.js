@@ -27,7 +27,7 @@ const Navigation = props => {
           <NavbarToggler onClick={toggleNavbar} className='mr-2' />
           <Collapse isOpen={!collapsed} navbar>
             <Nav navbar>
-              <NavItem>
+             {/*  <NavItem>
                 <NavLink to='/' className='menu-item' >
                   News
                 </NavLink>
@@ -49,7 +49,7 @@ const Navigation = props => {
                 <NavLink to='/' className='menu-item'>
                   Lifestyle
                 </NavLink>
-              </NavItem>
+              </NavItem> */}
             </Nav>
           </Collapse>
         </Navbar>
