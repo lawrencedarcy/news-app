@@ -10,17 +10,17 @@ import NewsStoryTiny from './NewsStoryTiny';
 const category = "business"
 
 const TOP_NEWS_URL =
-  "http://newsapi.org/v2/top-headlines?" +
+  "https://newsapi.org/v2/top-headlines?" +
   "country=gb&" +
   "apiKey=0dc27b8b03d146529a79da477d2aaa48";
 
 const TEST_STORIES =
-  `http://newsapi.org/v2/top-headlines?` +
+  `https://newsapi.org/v2/top-headlines?` +
    `country=gb&category=${category}` +
    `&apiKey=0dc27b8b03d146529a79da477d2aaa48`;
 
 const ALL_STORIES =
-`http://newsapi.org/v2/everything?` +
+`https://newsapi.org/v2/everything?` +
 "sources=axios,mtv-news-uk,national-geographic,new-scientist,independent,mashable, associated-press&" +
 "apiKey=0dc27b8b03d146529a79da477d2aaa48";
 
